@@ -1,0 +1,71 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: qw Embodiment, eqwe, LIC=ZB4EI-TZDH2-MM39I-T985N-31TVY-ADPVS
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  E:\dj2025\wurenji\keil_msp\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\dj2025\第二次实训\STM32F4_CODE_1\USER\Template\Template.uvprojx
+Project File Date:  12/22/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 1 (build 106)', folder: 'E:\dj2025\wurenji\keil_msp\ARM\ARMCC\Bin'
+Build target 'Template'
+compiling main.c...
+..\..\SYSTEM\led.h(5): warning:  #1295-D: Deprecated declaration led_Init - give arg types
+  void led_Init();
+..\..\SYSTEM\led.h(6): warning:  #1295-D: Deprecated declaration led_Liushui - give arg types
+  void led_Liushui();
+..\..\SYSTEM\key.h(5): warning:  #1295-D: Deprecated declaration key_Init - give arg types
+  void key_Init();
+..\..\SYSTEM\yl70.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+src\main.c(139): warning:  #223-D: function "Motor_Left_SetSpeed" declared implicitly
+          Motor_Left_SetSpeed(0,1);
+src\main.c(140): warning:  #223-D: function "Motor_Right_SetSpeed" declared implicitly
+          Motor_Right_SetSpeed(0,1);
+src\main.c(143): warning:  #1182-D: a declaration cannot have a label
+          uint8_t sensor_status = yl70_Read();
+src\main.c(136): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "sensor_status" (declared at line 143)
+      switch (car_state)
+      ^
+src\main.c(180): warning:  #223-D: function "motor_Init" declared implicitly
+      motor_Init();
+src\main.c: 9 warnings, 0 errors
+linking...
+Program Size: Code=3796 RO-data=424 RW-data=60 ZI-data=1028  
+FromELF: creating hex file...
+".\Objects\Template.axf" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.13.0.pack
+                Keil.STM32F4xx_DFP.2.13.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  E:/dj2025/wurenji/keil_msp/ARM/Pack/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
